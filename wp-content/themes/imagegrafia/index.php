@@ -20,11 +20,13 @@
             </div>
             <div class="generic-content">
               <?php the_excerpt() ?>
-              <p> <a class="btn btn--blue" href="<?php the_permalink();?>">Read More ..</a></p>
+              <p> <a class="btn btn--blue" href="<?php the_permalink();?>">Read More &raquo;</a></p>
             </div>
           </div>
      <?php }
     ?>
+    <!-- pagination  -->
+  <?php  echo paginate_links();?>  
 </div>
 
 <?php get_footer(); ?>
