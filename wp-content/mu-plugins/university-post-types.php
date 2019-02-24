@@ -3,7 +3,7 @@
 //custom post type  args  'post_type' ie. 'event' & array
 function university_post_type(){
     register_post_type('event',array(
-        'supports'=>array('title','editor','excerpt'),
+        'supports'=>array('title','editor','excerpt','custom-fields'),
         'rewrite' => array( 'slug' => 'events'),
         'has_archive' =>true,
         'public'=>true,
@@ -11,7 +11,7 @@ function university_post_type(){
         'labels'=>array(
             'name'=>'Events', //name of post type in dashboard
             'add_new_item'=> 'Add New Events',
-            'edit_item' => 'Ediy Event',
+            'edit_item' => 'Edit Event',
             'all_items' => 'All Events',
             'singular_name' => 'Event'
             )
