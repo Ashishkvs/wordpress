@@ -3,9 +3,9 @@
     <div class="page-banner__bg-image"
         style="background-image: url(<?php echo get_theme_file_uri('images/ocean.jpg');?>)"></div>
     <div class="page-banner__content container container--narrow">
-        <h3 class="page-banner__title"> <?php the_archive_title();?></h3>
+        <h3 class="page-banner__title"> Al Events</h3>
         <div class="page-banner__intro">
-            <p><?php echo the_archive_description(); ?></p>
+            <p>See What is Going on</p>
         </div>
     </div>
 </div>
