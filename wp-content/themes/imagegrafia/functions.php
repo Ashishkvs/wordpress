@@ -15,4 +15,18 @@ function universally_features(){
 }
 add_action('wp_enqueue_scripts','imagegrafia_files');
 add_action('after_setup_theme','universally_features');
+
+//custom post type
+function university_post_type(){
+    register_post_type('event',array(
+        'public'=>true,
+        'menu_icon' =>'dashicons-calendar',
+        'labels'=>array(
+            'name'=>'Events'
+        )
+    ));
+}
+
+add_action('init','university_post_type');
+
 ?>
